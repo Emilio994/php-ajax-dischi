@@ -13,6 +13,7 @@ body {
 /* HEADER */
 header {
     height: 100px;
+    margin-bottom: 15px;
 }
 header .logo {
     margin: 0 auto;
@@ -21,7 +22,6 @@ header .logo {
     display: flex;
     align-items: center;
 }
-
 header .logo img {
     width: 80px;
 }
@@ -40,20 +40,24 @@ header .logo img {
     flex-flow: column wrap;
     align-items: center;
     padding: 25px 10px;
-    margin: 50px;
+    margin: 20px 50px;
     width: calc(100% / 3 - 120px);
     color: white;
     background: rgba(0, 0, 0, 0.6);
     border-radius: 10px;
+    
 }
 .wrapper .album_template * {
     margin: 5px 0;
     width: 80%;
     text-align: center;
+
+    
 }
 .wrapper .album_template p {
     font-size: 13px;
 }
+
 
 
 
