@@ -1,11 +1,9 @@
-Vue.config.devtools = true;
 const myServer = 'http://localhost/php-ajax-dischi/server.php';
 
 const app = new Vue ({
     el : '#app',
     data : {
         importedAlbums : '',
-
     },
 
     methods : {
@@ -22,3 +20,5 @@ const app = new Vue ({
 
     }
 })
+
+Vue.config.devtools = true;
