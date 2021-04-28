@@ -15,15 +15,24 @@ header {
     height: 100px;
     margin-bottom: 15px;
 }
-header .logo {
+header .header_wrapper {
     margin: 0 auto;
     width: 80%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
     padding: 10px 30px;
+}
+header .logo {
+    width: fit-content;
     display: flex;
     align-items: center;
 }
 header .logo img {
     width: 80px;
+}
+header .ms_filter {
+    width: fit-content;
 }
 /* MAIN */
 .wrapper {

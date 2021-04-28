@@ -7,6 +7,9 @@ const app = new Vue ({
     },
 
     methods : {
+        filtered(array){
+
+        }
 
     },
 
@@ -17,7 +20,6 @@ const app = new Vue ({
             this.importedAlbums = result.data;
             console.log(this.importedAlbums);
         })
-
     }
 })
 

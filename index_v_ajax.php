@@ -6,7 +6,7 @@ Bonus: Attraverso un’altra chiamata AXIOS, filtrare gli album per artista -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/style.css?v= <?php echo time(); ?>">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500;700&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
@@ -18,9 +18,18 @@ Bonus: Attraverso un’altra chiamata AXIOS, filtrare gli album per artista -->
     <div id="app">
         <!-- Header  --> 
         <header>
-            <div class="logo">
-                <img src="img/spotify_logo.png" alt="Logo">
+            <div class="header_wrapper">
+                <div class="logo">
+                    <img src="img/spotify_logo.png" alt="Logo">
+                </div>
+                <div class="ms_filter">
+                    <select name="" id="">
+                        <option value="">Ciao</option>
+                        <option value="">Si</option>
+                    </select>
+                </div>
             </div>
+            
         </header>
 
         <!-- Main -->
