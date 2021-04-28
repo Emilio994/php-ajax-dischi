@@ -9,7 +9,7 @@
         if (in_array($myFilter , $album)) {
             $filteredDatabase [] = $album;
         }
-    }
+    };
 
     // var_dump($filteredDatabase);
     echo json_encode($filteredDatabase);
