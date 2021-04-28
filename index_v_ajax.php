@@ -24,7 +24,7 @@ Bonus: Attraverso un’altra chiamata AXIOS, filtrare gli album per artista -->
                 </div>
                 <div class="ms_filter">
                     <span>Filtra per Artista : </span>
-                    <select v-model='filter'>
+                    <select @change='filtered' v-model='filter'>
                         <option value = ''>Tutti gli artisti</option>
                         <option v-for='artist in artists'> {{ artist }}</option>
                     </select>

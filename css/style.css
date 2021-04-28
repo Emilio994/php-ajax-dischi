@@ -36,7 +36,7 @@ header .ms_filter {
     width: fit-content;
 }
 header .ms_filter span {
-    font-size: 12px;
+    font-size: 14px;
 }
 header .ms_filter select {
     overflow: hidden;
