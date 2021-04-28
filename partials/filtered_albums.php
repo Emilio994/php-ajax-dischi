@@ -10,5 +10,7 @@
             $filteredDatabase [] = $album;
         }
     }
-    
+
+    // var_dump($filteredDatabase);
     echo json_encode($filteredDatabase);
+    
