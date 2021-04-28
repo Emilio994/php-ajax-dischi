@@ -4,8 +4,10 @@ const app = new Vue ({
     el : '#app',
     data : {
         importedAlbums : '',
+        filter : '',
+        artists : []
     },
-
+    
     methods : {
         filtered(array){
 
@@ -17,8 +19,11 @@ const app = new Vue ({
         axios
         .get(myServer)
         .then(result => {
-            this.importedAlbums = result.data;
-            console.log(this.importedAlbums);
+            let myData = result.data;
+            this.importedAlbums = myData;
+            myData.forEach(element => {
+                this.artists.push(element.author);               
+            });
         })
     }
 })

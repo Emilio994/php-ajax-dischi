@@ -23,13 +23,13 @@ Bonus: Attraverso un’altra chiamata AXIOS, filtrare gli album per artista -->
                     <img src="img/spotify_logo.png" alt="Logo">
                 </div>
                 <div class="ms_filter">
-                    <select name="" id="">
-                        <option value="">Ciao</option>
-                        <option value="">Si</option>
+                    <span>Filtra per Artista : </span>
+                    <select v-model='filter'>
+                        <option value = ''>Tutti gli artisti</option>
+                        <option v-for='artist in artists'> {{ artist }}</option>
                     </select>
                 </div>
             </div>
-            
         </header>
 
         <!-- Main -->
